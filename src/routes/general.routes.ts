@@ -8,6 +8,8 @@ import { postFeedback } from "../controllers/postFeedBack.controller.js";
 import { feedbackValidator } from "../validations/feedbackValidation.js";
 import { authorizeRoles } from "../middlewares/authorizeRoles.middleware.js";
 import { authenticateUser } from "../JWT/authenticate.middleware.js";
+import { changePassword } from "../controllers/changePassword.controller.js";
+import { forgotPasswordRequest } from "../controllers/forgotPasswordRequest.controller.js";
 
 const router = Router();
 
@@ -31,6 +33,14 @@ router.post(
   postFeedback
 );
 
+router.post(
+  "/change-password",
+  authenticateUser,
+  authorizeRoles("meetee", "mentor"),
+  changePassword
+);
 
+
+router.post("/forgot-password/request", forgotPasswordRequest)
 
 export default router;

@@ -5,14 +5,14 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const sequelize = new Sequelize(
-  process.env.DB_name as string,
-  process.env.DB_username as string,
-  process.env.DB_password || "",
+  process.env.DB_NAME as string,
+  process.env.DB_USERNAME as string,
+  process.env.DB_PASSWORD || "",
   {
-    host: process.env.DB_host,
+    host: process.env.DB_HOST,
     dialect: "mysql",
-    port: Number(process.env.DB_port),
-    logging: Boolean(process.env.DB_logging),
+    port: Number(process.env.DB_PORT),
+    logging: Boolean(process.env.DB_LOGGING),
   }
 );
 

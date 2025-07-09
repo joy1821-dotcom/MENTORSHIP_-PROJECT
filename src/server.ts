@@ -1,5 +1,5 @@
 import { sequelize } from "./config/database_setup.js";
-import { app } from "../src/app.js";
+import { app } from "./app.js";
 import dotenv from "dotenv";
 import seedAdmin from "./seed/seedAdmin.js";
 import { seedMentees} from "./seed/seedMentees.js";
@@ -12,8 +12,8 @@ const startServer = async () => {
   try {
     await sequelize.authenticate();
     console.log("Database is connected");
-    
-    await sequelize.sync({ });
+    //await sequelize.drop({ cascade: true });
+    await sequelize.sync({ alter: true });
     console.log("Database is synched");
 
     await seedAdmin();

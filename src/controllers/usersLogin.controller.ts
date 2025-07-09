@@ -40,7 +40,7 @@ export const usersLogin: RequestHandler = async(req, res)=> {
 
     const passwordMatch = await checkPassword(password, user.password);
     if (!passwordMatch) {
-       res.status(401).json({ error: "Invalid email or password." });
+       res.status(401).json({ message: "Invalid email or password." });
        return; 
     }
 

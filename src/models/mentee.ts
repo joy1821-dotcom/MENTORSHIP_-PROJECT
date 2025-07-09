@@ -23,6 +23,8 @@ class Mentee extends Model<
   declare createdAt?: CreationOptional<Date>;
   declare updatedAt?: CreationOptional<Date>;
   declare timeZone?: string;
+  declare resetTokenHash?: string;
+  declare resetTokenExpires?: Date;
 }
 
 Mentee.init(
@@ -65,6 +67,15 @@ Mentee.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
+    },
+    resetTokenHash: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+
+    resetTokenExpires: {
+      type: DataTypes.DATE,
+      allowNull: true,
     },
   },
   {
