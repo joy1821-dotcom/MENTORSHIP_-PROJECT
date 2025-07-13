@@ -1,5 +1,5 @@
 import { sequelize } from "./config/database_setup.js";
-import { app } from "./app.js";
+import { app }  from "./app.js";
 import dotenv from "dotenv";
 import seedAdmin from "./seed/seedAdmin.js";
 import { seedMentees} from "./seed/seedMentees.js";
