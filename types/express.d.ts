@@ -1,6 +1,6 @@
 import "express";
 
-declare module "express=server=static=core"{
+declare module "express-serve-static-core"{
    interface Request{
     user?:{
         id: number;
