@@ -22,7 +22,7 @@ export async function seedMentors() {
       email: "david.lee@example.com",
       goals: "Help others break into software engineering.",
       skills: ["JavaScript", "Node.js", "React", "System Design"],
-      password: "password123",
+      password: "Pass@joy1",
       isAvailable: true,
     },
     {
@@ -32,7 +32,7 @@ export async function seedMentors() {
       email: "rina.patel@example.com",
       goals: "Support aspiring designers entering the UX field.",
       skills: ["UX Design", "Figma", "User Research", "Design Thinking"],
-      password: "password123",
+      password: "Password12#",
       isAvailable: true,
     },
   ];

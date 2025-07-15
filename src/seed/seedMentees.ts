@@ -11,7 +11,7 @@ const menteesData = [
     email: "ebuka@example.com",
     goals: "Learn React and get an internship.",
     skills: ["HTML", "CSS"],
-    password: "password123",
+    password: "Password@123",
   },
   {
     firstName: "Akpa",
@@ -20,16 +20,16 @@ const menteesData = [
     email: "chinedu@example.com",
     goals: "Build a machine learning portfolio.",
     skills: ["Python", "Pandas", "Matplotlib"],
-    password: "securePass456",
+    password: "Secure456@",
   },
   {
-    firstName: "Chloe",
+    firstName: "Temitope",
     lastName: "Kim",
     shortBio: "Curious about cybersecurity and ethical hacking.",
-    email: "chloe.kim@example.com",
+    email: "Temi.kim@example.com",
     goals: "Learn about network security tools.",
     skills: ["Networking", "Linux"],
-    password: "cyberSecure!78",
+    password: "CyberSecure!78",
   },
 ];
 
